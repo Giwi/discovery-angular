@@ -1,13 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100" data-bs-theme="auto">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DiscoveryAngular</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root></app-root>
+
+<body class="d-flex flex-column h-100">
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Discovery Angular sample</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">          
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="flex-shrink-0 py-5">
+    <div class="container">
+      <app-root></app-root>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container">
+      <span class="text-body-secondary">Copyright © Giwi 2023.</span>
+    </div>
+  </footer>
+  <script nomodule src="/assets/discovery/dist/discovery/discovery.js" defer></script>
+  <script type="module" src="/assets/discovery/dist/discovery/discovery.esm.js" defer></script>
 </body>
+
 </html>
